@@ -1,5 +1,5 @@
 Ext.onReady(function () {
-    alert("Hello");
+
 
     var loginBox = Ext.create('Ext.panel.Panel', {
         width: 335,

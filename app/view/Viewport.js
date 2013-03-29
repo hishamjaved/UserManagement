@@ -1,17 +1,21 @@
 Ext.define('UserManagement.view.Viewport', {
     renderTo: Ext.getBody(),
     extend: 'Ext.container.Viewport',
-    requires:[
+    requires: [
         'Ext.Panel',
-        'Ext.layout.container.VBox',
-        'UserManagement.view.Welcome',
-        'Ext.form.Label'
-        
+        'Ext.layout.container.Fit',
+        'UserManagement.view.Main',
+        'Ext.tab.Panel'
+
     ],
     layout: {
-		type:'vbox',
-		align:'center',
-		pack:'center'
-	},	
-    items: [{xtype:'welcome'}]
+        type: 'fit'
+    },
+    autoScroll: true,
+    border: false,
+    minWidth: 1000,
+    minHeight: 500,
+    items: [
+        {xtype: 'main'}
+    ]
 });

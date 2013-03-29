@@ -100,3 +100,83 @@ a:active {
 	-moz-user-select: none;
 }
 
+/*Main View Theme*/
+.top-header{
+    background-color: #043453;
+    width:100%;
+}
+
+.bottom-header{
+    border:none;
+    border-top: solid 1px #0D6C9B;
+    background-color: #085C88;
+    background-image: -moz-linear-gradient(top bottom , #064C79, #085C88);
+}
+
+.header-logo{
+    background:url('../images/senchaLogo.png') no-repeat transparent;
+}
+
+.side-panel-top-box{
+    background-color: #085C88;
+}
+
+.side-panel-bottom-box-left{
+    background: transparent;
+    border-width: 0 1px 0 0;
+    -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
+    -webkit-border-image:-webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -o-border-image:-o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -moz-border-image:-moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+}
+
+.side-panel-bottom-box-right{
+    background: transparent;
+    border-width: 0 0 0 1px;
+    -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
+    -webkit-border-image:-webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -o-border-image:-o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -moz-border-image:-moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+}
+
+.side-panel{
+    background-color: #F8F8F8;
+}
+
+.middle-panel{
+    background-color: #FFFFFF;
+    -moz-border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.main-container{
+    background-color: #085C88;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#085C88), to(#FFFFFF));*/
+}
+
+.footer{
+    border:none;
+    border-top: solid 1px #BBBBBB;
+    border-collapse: collapse;
+    background-color: #DDDDDD;
+}
+
+.text-button{
+    background:transparent;
+    background-image: none;
+    border:none;
+}
+
+.logout-button{
+   color:#D80000;
+    font-size: 1em;
+}
+
+.user-button{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 1em;
+}
+
