@@ -1,7 +1,7 @@
-Ext.define("UserManagement.view.Main", {
+Ext.define("UserManagement.view.main.Default", {
     extend: 'Ext.panel.Panel',
-    requires:['UserManagement.view.UserList'],
-    xtype: 'main',
+    requires:['UserManagement.view.user.UserList'],
+    xtype: 'default',
     border: false,
     layout: {
         type: 'vbox'
@@ -37,8 +37,7 @@ Ext.define("UserManagement.view.Main", {
                                 {
                                     xtype: 'button',
                                     text: 'Hisham Javed',
-                                    baseCls: 'text-button user-button',
-
+                                    baseCls: 'text-button user-button'
                                 },
                                 {
                                     xtype: 'button',

@@ -1,30 +1,40 @@
+Ext.require([
+    'Ext.grid.*',
+    'Ext.data.*',
+    'Ext.data.StoreManager',
+    'Ext.form.field.Number',
+    'Ext.form.field.Date',
+    'Ext.tip.QuickTipManager',
+    'UserManagement.store.UserStore',
+    'UserManagement.model.UserModel',
+    'UserManagement.view.user.UserList',
+    'UserManagement.view.main.Default',
+    'Ext.data.reader.Json'
+]);
+
 Ext.application({
-    requires:['UserManagement.store.User'],
-    controllers: ["Main"],
-    views: ["Main","UserList"],
-    models:["User"],
-    stores:["User"],
-
     name: 'UserManagement',
-
+    controllers: ["MainController","UserController"],
     autoCreateViewport: true,
     launch: function () {
-        loadDefaultData()
+        loadDefaultData();
     }
 });
 
 function loadDefaultData() {
     var users = new Array();
-    users.push({id: 1,
+    users.push({
+        userId:1,
         firstName: 'Administrator',
         lastName: '',
-        email: 'admin@zintechnologies.com',
-        userName: 'admin',
-        password: 'admin',
-        city: 'Lahore',
-        zipCode: '54000',
-        country: 'Pakistan',
-        dateCreated: new Date()});
+        fullName: 'Hisham Javed'
+       },
+        {
+            userId:2,
+            firstName: 'Super',
+            lastName: 'Admin',
+            fullName: 'Super Admin'
+        });
 
-    localStorage.setItem('UserData', Ext.JSON.encode(users));
+    localStorage.setItem('UserMgmt', Ext.JSON.encode(users));
 }

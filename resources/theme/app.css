@@ -151,6 +151,14 @@ a:active {
     border-top-left-radius: 5px;
 }
 
+.user-grid{
+    -moz-border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: solid 1px #99bce8;
+}
+
 .main-container{
     background-color: #085C88;
     /*background: -webkit-gradient(linear, left top, left bottom, from(#085C88), to(#FFFFFF));*/

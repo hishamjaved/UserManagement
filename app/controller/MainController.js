@@ -1,6 +1,7 @@
-Ext.define('UserManagement.controller.Main', {
+Ext.define('UserManagement.controller.MainController', {
     extend: 'Ext.app.Controller',
     config :{
+        views: ["main.Default"],
         init: function(){
             this.control({
                 '[action=mainTabPanelAction]':{

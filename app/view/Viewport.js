@@ -4,7 +4,7 @@ Ext.define('UserManagement.view.Viewport', {
     requires: [
         'Ext.Panel',
         'Ext.layout.container.Fit',
-        'UserManagement.view.Main',
+        'UserManagement.view.main.Default',
         'Ext.tab.Panel'
 
     ],
@@ -16,6 +16,6 @@ Ext.define('UserManagement.view.Viewport', {
     minWidth: 1000,
     minHeight: 500,
     items: [
-        {xtype: 'main'}
+        {xtype: 'default'}
     ]
 });
