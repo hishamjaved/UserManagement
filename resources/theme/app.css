@@ -1,87 +1,87 @@
 @import url('../../ext/resources/css/ext-all.css');
 
-body{
-	font-family: arial,helvetica,sans-serif;
+body {
+    font-family: arial, helvetica, sans-serif;
 }
 
-.no-background{
-	background:none;
+.no-background {
+    background: none;
 }
 
-.sign-box{
-	background-color:#f1f1f1;
-	border:1px solid #E5E5E5;
+.sign-box {
+    background-color: #f1f1f1;
+    border: 1px solid #E5E5E5;
 }
 
-.sign-box-logo{
-	background:url('../images/googleGray.png') no-repeat scroll 0 0 transparent;
+.sign-box-logo {
+    background: url('../images/googleGray.png') no-repeat scroll 0 0 transparent;
 }
 
-.sign-box-heading{
-	font-size:16px;
-	line-height:18px;
-	color:#222222;
+.sign-box-heading {
+    font-size: 16px;
+    line-height: 18px;
+    color: #222222;
 }
 
-.fieldCaption{
-	font-weight:bold;
-	font-family: arial,helvetica,sans-serif;
-	color:#222222;
-	-moz-user-select: none;
+.fieldCaption {
+    font-weight: bold;
+    font-family: arial, helvetica, sans-serif;
+    color: #222222;
+    -moz-user-select: none;
 }
 
-.textField{
-	font-size:15px;
-	background:none repeat scroll 0 0 #FFFFFF;
-	border-color: #C0C0C0 #D9D9D9 #D9D9D9;
-	height: 32px;
+.textField {
+    font-size: 15px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+    height: 32px;
 }
 
-input[type="password"]:focus, input[type="text"]:focus{
-	border: 1px solid #4D90FE;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
-	outline: medium none;
+input[type="password"]:focus, input[type="text"]:focus {
+    border: 1px solid #4D90FE;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    outline: medium none;
 }
 
-.sign-button{
-	background-color: #4D90FE;
-	background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
-	border: 1px solid #3079ED;
-	color: #FFFFFF;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-	border-radius: 2px 2px 2px 2px;
-	dislay:inline-block;
-	font-weight:bold;
-	width:70px;
-	padding:0 8px;
-	text-align:center;
-	transition: all 0.218s ease 0s;
-	font-size:13px;
-	height:32px;
-	margin:0 1.5em 1.2em 0;
-	line-height:29px;
-	-moz-user-select: none;	
+.sign-button {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 2px 2px;
+    dislay: inline-block;
+    font-weight: bold;
+    width: 70px;
+    padding: 0 8px;
+    text-align: center;
+    transition: all 0.218s ease 0s;
+    font-size: 13px;
+    height: 32px;
+    margin: 0 1.5em 1.2em 0;
+    line-height: 29px;
+    -moz-user-select: none;
 }
 
-.sign-checkbox{
-	margin: 8px 8px 0 5px;	
+.sign-checkbox {
+    margin: 8px 8px 0 5px;
 }
 
-.checkbox-label{
-	line-height:29px;
-	color: #666666;
-	-moz-user-select: none;
-	font-weight:normal;
-	font-size:1.15em;
+.checkbox-label {
+    line-height: 29px;
+    color: #666666;
+    -moz-user-select: none;
+    font-weight: normal;
+    font-size: 1.15em;
 }
 
-.sign-link{
-	font-size:1.1em;
-	color: #1155CC;
+.sign-link {
+    font-size: 1.1em;
+    color: #1155CC;
 }
 
-a{	
-	text-decoration:none;
+a {
+    text-decoration: none;
 }
 
 a:active {
@@ -92,58 +92,58 @@ a:active {
     text-decoration: underline;
 }
 
-.large-welcome{
-	font-size:200px;
-	font-weight:bold;
-	font-family: arial,helvetica,sans-serif;
-	color:#c3c3c3;
-	-moz-user-select: none;
+.large-welcome {
+    font-size: 200px;
+    font-weight: bold;
+    font-family: arial, helvetica, sans-serif;
+    color: #c3c3c3;
+    -moz-user-select: none;
 }
 
 /*Main View Theme*/
-.top-header{
+.top-header {
     background-color: #043453;
-    width:100%;
+    width: 100%;
 }
 
-.bottom-header{
-    border:none;
+.bottom-header {
+    border: none;
     border-top: solid 1px #0D6C9B;
     background-color: #085C88;
-    background-image: -moz-linear-gradient(top bottom , #064C79, #085C88);
+    background-image: -moz-linear-gradient(top bottom, #064C79, #085C88);
 }
 
-.header-logo{
-    background:url('../images/senchaLogo.png') no-repeat transparent;
+.header-logo {
+    background: url('../images/senchaLogo.png') no-repeat transparent;
 }
 
-.side-panel-top-box{
+.side-panel-top-box {
     background-color: #085C88;
 }
 
-.side-panel-bottom-box-left{
+.side-panel-bottom-box-left {
     background: transparent;
     border-width: 0 1px 0 0;
-    -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
-    -webkit-border-image:-webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
-    -o-border-image:-o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
-    -moz-border-image:-moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -o-border-image: -o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -moz-border-image: -moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
 }
 
-.side-panel-bottom-box-right{
+.side-panel-bottom-box-right {
     background: transparent;
     border-width: 0 0 0 1px;
-    -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
-    -webkit-border-image:-webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
-    -o-border-image:-o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
-    -moz-border-image:-moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#F8F8F8)) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -o-border-image: -o-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
+    -moz-border-image: -moz-linear-gradient(#BBBBBB, #F8F8F8) 1 100%;
 }
 
-.side-panel{
+.side-panel {
     background-color: #F8F8F8;
 }
 
-.middle-panel{
+.middle-panel {
     background-color: #FFFFFF;
     -moz-border-top-right-radius: 5px;
     -moz-border-top-left-radius: 5px;
@@ -151,7 +151,7 @@ a:active {
     border-top-left-radius: 5px;
 }
 
-.user-grid{
+.user-grid {
     -moz-border-top-right-radius: 5px;
     -moz-border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -159,31 +159,36 @@ a:active {
     border: solid 1px #99bce8;
 }
 
-.main-container{
+.main-container {
     background-color: #085C88;
     /*background: -webkit-gradient(linear, left top, left bottom, from(#085C88), to(#FFFFFF));*/
 }
 
-.footer{
-    border:none;
+.footer {
+    border: none;
     border-top: solid 1px #BBBBBB;
     border-collapse: collapse;
     background-color: #DDDDDD;
 }
 
-.text-button{
-    background:transparent;
+.text-button {
+    background: transparent;
     background-image: none;
-    border:none;
+    border: none;
 }
 
-.logout-button{
-   color:#D80000;
+.logout-button .x-btn-inner {
+    color: #D80000;
     font-size: 1em;
 }
 
-.user-button{
-    color:#FFFFFF;
+.logout-button-over .x-btn-inner{
+    color: #29d80f !important;
+    font-size: 1em;
+}
+
+.user-button .x-btn-inner {
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 1em;
 }

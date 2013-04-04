@@ -5,7 +5,15 @@ Ext.define('UserManagement.model.UserModel', {
         {name: 'userId', type: 'int'},
         {name: 'firstName', type: 'string'},
         {name: 'lastName', type: 'string'},
-        {name: 'fullName', type: 'string'}
+        {name: 'fullName', type: 'string'},
+        {name: 'email', type: 'string'},
+        {name: 'userName', type: 'string'},
+        {name: 'password', type: 'string'},
+        {name: 'city', type: 'string'},
+        {name: 'zipCode', type: 'string'},
+        {name: 'country', type: 'string'},
+        {name: 'jobDescription', type: 'string'},
+        {name: 'dateCreated', type: 'date',dateFormat: 'Y-m-d H:i:s'}
     ],
     constructor:function(){
         this.callParent(arguments);

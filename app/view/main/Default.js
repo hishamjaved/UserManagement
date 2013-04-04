@@ -37,12 +37,19 @@ Ext.define("UserManagement.view.main.Default", {
                                 {
                                     xtype: 'button',
                                     text: 'Hisham Javed',
-                                    baseCls: 'text-button user-button'
+                                    cls: 'text-button user-button',
+                                    listeners:{
+                                        click:function(){
+                                            alert('Button Pressed');
+                                        }
+                                    }
                                 },
                                 {
                                     xtype: 'button',
                                     text: 'Logout',
-                                    baseCls: 'text-button logout-button',
+                                    cls:'text-button logout-button',
+                                    overCls:'logout-button-over',
+                                    pressedCls:'logout-button-over',
                                     margin: '0 0 0 25'
                                 }
                             ]

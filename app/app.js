@@ -14,9 +14,12 @@ Ext.require([
 
 Ext.application({
     name: 'UserManagement',
-    controllers: ["MainController","UserController"],
+    //Listed controllers will be instantiate at application load time
+    controllers: ["MainController", "UserController"],
     autoCreateViewport: true,
     launch: function () {
+        //Load Application Startup data
+
         loadDefaultData();
     }
 });
@@ -24,16 +27,24 @@ Ext.application({
 function loadDefaultData() {
     var users = new Array();
     users.push({
-        userId:1,
-        firstName: 'Administrator',
-        lastName: '',
-        fullName: 'Hisham Javed'
-       },
+            userId: 1,
+            firstName: 'Administrator',
+            lastName: '',
+            fullName: 'Hisham Javed',
+            email: 'administrator@zin.com',
+            userName: 'admin',
+            password: 'admin',
+            dateCreated: Ext.Date.format(new Date(),"Y-m-d H:i:s")
+        },
         {
-            userId:2,
+            userId: 2,
             firstName: 'Super',
             lastName: 'Admin',
-            fullName: 'Super Admin'
+            fullName: 'Super Admin',
+            email: 'super-admin@zin.com',
+            userName: 'superadmin',
+            password: 'admin123',
+            dateCreated: Ext.Date.format(new Date(),"Y-m-d H:i:s")
         });
 
     localStorage.setItem('UserMgmt', Ext.JSON.encode(users));

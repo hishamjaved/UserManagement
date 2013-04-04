@@ -3,11 +3,11 @@ Ext.define('UserManagement.view.user.UserList', {
     xtype: 'userlist',
     title: 'Users',
     // We can use any method from the following 4 choices to assign store into grid or any other component
-    // Make sure your storeId is has the same name as classname otherwise first two methods will not work
+    // Make sure your storeId has the same name as classname otherwise first two methods will not work
     // 1: store: Ext.data.StoreManager.lookup('UserStore')
     // 2: store: Ext.getStore('UserStore')
     // 3: store: Ext.create('UserManagement.store.UserStore')
-    // 4: store: 'UserStore'
+    // 4: store: 'UserStore'   Note: For this approach first you must have data in localstorage, otherwise this method will give error
     store:  'UserStore',
     requires: [
         'Ext.toolbar.Paging',
@@ -28,8 +28,10 @@ Ext.define('UserManagement.view.user.UserList', {
     flex:1,
     loadMask: true,
     columns:[
-        {text:'First Name', dataIndex:"firstName",width:500,sortable: true},
-        {text:'Last Name', dataIndex:"lastName",width:500,sortable: true}
+        {text:'Name', dataIndex:"fullName",flex:25,sortable: true},
+        {text:'Email', dataIndex:"email",flex:35,sortable: true},
+        {text:'Login ID', dataIndex:"userName",flex:20,sortable: true},
+        {text:'Created', dataIndex:"dateCreated",flex:20,sortable: true,xtype: 'datecolumn',format:'Y-m-d H:i:s'}
     ],
     listeners:{
         afterrender:function(){
