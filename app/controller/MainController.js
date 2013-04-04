@@ -1,5 +1,6 @@
 Ext.define('UserManagement.controller.MainController', {
     extend: 'Ext.app.Controller',
+    localized: true,
     config :{
         views: ["main.Default"],
         init: function(){

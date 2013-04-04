@@ -1,6 +1,7 @@
 Ext.define('UserManagement.view.Viewport', {
     renderTo: Ext.getBody(),
     extend: 'Ext.container.Viewport',
+    localized: true,
     requires: [
         'Ext.Panel',
         'Ext.layout.container.Fit',
